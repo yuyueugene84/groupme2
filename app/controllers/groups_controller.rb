@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-	before_action :login_required, :only => [:new, :create, :edit,:update,:destroy]
+	before_action :login_required, :only => [:index, :new, :create, :edit,:update,:destroy]
 
 def index
 	@groups = Group.all
